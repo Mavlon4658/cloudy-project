@@ -57,8 +57,9 @@ export default {
   margin-bottom: -20px;
   cursor: pointer;
 }
+
 .footer_bottom a {
-    display: block;
+  display: block;
   background: transparent;
   color: #ffffff;
   font-size: 13px;

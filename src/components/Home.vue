@@ -5,27 +5,46 @@
       <img src="@/assets/home/logo.svg" alt="" />
     </div>
     <Link />,
- 
+
+      <button><a href="#">mint</a></button>
 
     <img class="cloud1" src="@/assets/cloud1.svg" alt="" />
   </div>
 </template>
 
 <script>
-import Link from './Link.vue'
+import Link from "./Link.vue";
 export default {
-   components: {
-    Link
-  }
+  components: {
+    Link,
+  },
 };
 </script>
 
 
 <style scoped>
+/* button */
+button{
+  position: absolute;
+  border: 6px solid #C7FE06;
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 15px;
+  right: 50px;
+  top: -50px;
+  transform: rotate(-25deg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+button a{
+  display: block;
+  font-size: 50px;
+  font-weight: 900;
+  color: #000;
+}
 .container {
   position: relative;
 }
-.moon{
+.moon {
   width: 60px;
   display: block;
   position: absolute;
@@ -48,181 +67,216 @@ img {
   display: block;
 }
 
-
 .cloud1 {
   width: 150px;
   position: absolute;
   right: 15%;
   bottom: 0;
-  animation: clound 4s infinite
+  animation: clound 4s infinite;
 }
 
 @keyframes clound {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(-15px);
-    }
+  }
 }
 @keyframes moon {
-  0% , 100%{
+  0%,
+  100% {
     transform: rotate(-20deg);
   }
-  30%{
+  30% {
     transform: rotate(-20deg);
   }
-  50%{
+  50% {
     transform: rotate(-50deg);
-    }
-  60%{
+  }
+  60% {
     transform: rotate(0deg);
-    }
+  }
 }
 
-@media(max-width:1024px){
-.moon{
-  width: 42px;
-  left: 15%;
-  top: 0;
-}
-/* logo */
-.logo {
-  margin-top: 50px;
-}
-.logo img {
-  margin: 3px auto;
-  width: 200px;
-}
-.links ul {
-  margin-top: 15px;
-  gap: 15px;
-}
-ul li a img {
-  width:42px;
-  height: auto;
-}
+@media (max-width: 1024px) {
+  .moon {
+    width: 42px;
+    left: 15%;
+    top: 0;
+  }
+  /* logo */
+  .logo {
+    margin-top: 50px;
+  }
+  .logo img {
+    margin: 3px auto;
+    width: 200px;
+  }
+  .links ul {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  ul li a img {
+    width: 42px;
+    height: auto;
+  }
 
-.cloud1 {
-  width: 100px;
-  right: 15%;
-  bottom: 0;
+  .cloud1 {
+    width: 100px;
+    right: 15%;
+    bottom: 0;
+  }
+  /* button */
+button{
+  border: 6px solid #C7FE06;
+  cursor: pointer;
+  padding: 5px 20px;
+  right: 20px;
+  top: -20px;
+}
+button a{
+  font-size: 45px;
+  font-weight: 900;
 }
 }
-@media(max-width:768px){
-  .moon{
-  width: 42px;
-  left: 15%;
-  top: 20%;
-}
-/* logo */
-.logo {
-  margin-top: 50px;
-}
-.logo img {
-  margin: 3px auto;
-  width: 220px;
-}
-.links ul {
-  margin-top: 15px;
-  gap: 15px;
-}
-ul li a img {
-  width:47px;
-  height: auto;
-}
+@media (max-width: 768px) {
+  .moon {
+    width: 42px;
+    left: 15%;
+    top: 20%;
+  }
+  /* logo */
+  .logo {
+    margin-top: 50px;
+  }
+  .logo img {
+    margin: 3px auto;
+    width: 220px;
+  }
+  .links ul {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  ul li a img {
+    width: 47px;
+    height: auto;
+  }
 
-.cloud1 {
-  width: 100px;
-  right: 15%;
-  bottom: 40%;
+  .cloud1 {
+    width: 100px;
+    right: 15%;
+    bottom: 40%;
+  }
+  
 }
-}
-@media(max-width:615px){
-  .moon{
-  width: 40px;
-  left: 10%;
-  top: -4%;
-}
-/* logo */
-.logo {
-  margin-top: 50px;
-}
-.logo img {
-  margin: 3px auto;
-  width: 220px;
-}
-.links ul {
-  margin-top: 15px;
-  gap: 15px;
-}
-ul li a img {
-  width:47px;
-  height: auto;
-}
+@media (max-width: 615px) {
+  .moon {
+    width: 40px;
+    left: 10%;
+    top: -4%;
+  }
+  /* logo */
+  .logo {
+    margin-top: 50px;
+  }
+  .logo img {
+    margin: 3px auto;
+    width: 220px;
+  }
+  .links ul {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  ul li a img {
+    width: 47px;
+    height: auto;
+  }
 
-.cloud1 {
-  width: 90px;
-  right: 4%;
-  bottom: 17%;
+  .cloud1 {
+    width: 90px;
+    right: 4%;
+    bottom: 17%;
+  }
+  button{
+    border: 5px solid #C7FE06;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0 8px;
+    right: 10px;
+  top: -20px;
+}
+button a{
+  font-size: 30px;
 }
 }
-@media(max-width:425px){
-  .moon{
-  width: 34px;
-  left: 10%;
-  top: -4%;
-}
-/* logo */
-.logo {
-  margin-top: 50px;
-}
-.logo img {
-  margin: 3px auto;
-  width: 220px;
-}
-.links ul {
-  margin-top: 15px;
-  gap: 15px;
-}
-ul li a img {
-  width:47px;
-  height: auto;
-}
+@media (max-width: 425px) {
+  .moon {
+    width: 34px;
+    left: 10%;
+    top: -4%;
+  }
+  /* logo */
+  .logo {
+    margin-top: 50px;
+  }
+  .logo img {
+    margin: 3px auto;
+    width: 220px;
+  }
+  .links ul {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  ul li a img {
+    width: 47px;
+    height: auto;
+  }
 
-.cloud1 {
-  width: 80px;
-  right: 4%;
-  bottom: 17%;
+  .cloud1 {
+    width: 80px;
+    right: 4%;
+    bottom: 17%;
+  }
 }
-}
-@media(max-width:375px){
-  .moon{
-  width: 30px;
-  left: 8%;
-  top: -3%;
-}
-/* logo */
-.logo {
-  margin-top: 50px;
-}
-.logo img {
-  margin: 3px auto;
-  width: 220px;
-}
-.links ul {
-  margin-top: 15px;
-  gap: 15px;
-}
-ul li a img {
-  width:47px;
-  height: auto;
-}
+@media (max-width: 375px) {
+  .moon {
+    width: 30px;
+    left: 8%;
+    top: -3%;
+  }
+  /* logo */
+  .logo {
+    margin-top: 50px;
+  }
+  .logo img {
+    margin: 3px auto;
+    width: 220px;
+  }
+  .links ul {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  ul li a img {
+    width: 47px;
+    height: auto;
+  }
 
-.cloud1 {
-  width: 65px;
-  right: 4%;
-  bottom: 20%;
+  .cloud1 {
+    width: 65px;
+    right: 4%;
+    bottom: 20%;
+  }
+  button{
+  border: 4px solid #C7FE06;
+  cursor: pointer;
+  padding: 0 8px;
+  right: 10px;
+  top: -30px;
+}
+button a{
+  font-size: 22px;
 }
 }
 </style>

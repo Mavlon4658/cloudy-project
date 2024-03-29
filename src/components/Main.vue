@@ -30,11 +30,10 @@
       </li>
     </ul>
 
-
     <img class="ducg" src="@/assets/main/duck.svg" alt="" />
     <img class="cloud3" src="@/assets/main/cloud3.svg" alt="" />
   </div>
-    <!-- <div class="carusel">
+  <!-- <div class="carusel">
         <img src="@/assets/main/carusel_1.svg" alt="">
         <img src="@/assets/main/carusel_2.svg" alt="">
         <img src="@/assets/main/carusel_3.svg" alt="">
@@ -53,14 +52,15 @@
         <img src="@/assets/main/carusel_16.svg" alt="">
         <img src="@/assets/main/carusel_17.svg" alt="">
     </div> -->
+
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <style scoped>
-
 /* .carusel{
     width: 100%;
     border-bottom: 2px solid;
