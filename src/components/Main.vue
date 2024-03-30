@@ -30,19 +30,37 @@
       </li>
     </ul>
 
-    <img class="ducg" src="@/assets/main/duck.svg" alt="" />
+    <img
+      class="ducg animated-element"
+      @mouseover="isHovered = true"
+      @mouseleave="isHovered = false"
+      :class="{ animate: isHovered }"
+      src="@/assets/main/duck.svg"
+      alt=""
+    />
     <img class="cloud3" src="@/assets/main/cloud3.svg" alt="" />
-  </div>
 
+  </div>
 </template>
 
 <script>
+import "animate.css";
 export default {
+  data() {
+    return {
+      isHovered: false, // isHovered degan muhit o'zgaruvchisini qo'shamiz
+    };
+  },
 };
 </script>
 
 <style scoped>
-
+.animated-element {
+  transition: transform .3s ease;
+}
+.animate {
+  transform:rotate(-40deg);
+}
 
 .main_container {
   position: relative;
@@ -98,6 +116,10 @@ export default {
   top: 10%;
   left: 6%;
   width: 60px;
+}
+.ducg :hover {
+  /* transform: translate(20deg);
+  left: 20px; */
 }
 .cloud3 {
   position: absolute;
@@ -185,7 +207,7 @@ export default {
 @media (max-width: 375px) {
   .main_container {
     padding: 0 60px;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .og_img {
     max-width: 140px;
