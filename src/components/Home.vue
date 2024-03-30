@@ -1,11 +1,10 @@
 <template>
   <div class="container">
-    <img class="moon" src="@/assets/home/moon.svg" alt="moon" />
+    <img class="moon animate__animated animate__bounce animate__tada" src="@/assets/home/moon.svg" alt="moon" />
     <div class="logo">
       <img src="@/assets/home/logo.svg" alt="" />
     </div>
     <Link />,
-
       <button><a target="_blank" href="https://discord.gg/cloudynowhere">mint</a></button>
 
     <img class="cloud1" src="@/assets/cloud1.svg" alt="" />
@@ -13,6 +12,7 @@
 </template>
 
 <script>
+import 'animate.css';
 import Link from "./Link.vue";
 export default {
   components: {
@@ -50,8 +50,8 @@ button a{
   position: absolute;
   left: 15%;
   transform: rotate(-10deg);
-  animation: moon 4s reverse;
 }
+
 /* logo */
 .logo {
   margin-top: 100px;
@@ -84,21 +84,7 @@ img {
     transform: translateY(-15px);
   }
 }
-@keyframes moon {
-  0%,
-  100% {
-    transform: rotate(-20deg);
-  }
-  30% {
-    transform: rotate(-20deg);
-  }
-  50% {
-    transform: rotate(-50deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-}
+
 
 @media (max-width: 1024px) {
   .moon {

@@ -1,7 +1,13 @@
 <template>
-    <div class="carusel">
-        <Vue3Marquee :direction="'reverse'" :animateOnOverflow="true" :duration="24">
-        <img src="@/assets/main/carusel_1.svg" alt="">
+    <!-- <div class="carusel">
+        <Vue3Marquee :direction="'normal'" :loop="1"  :animateOnOverflow="true" :duration="24">
+
+        
+  </Vue3Marquee>
+</div> -->
+<div >
+    <marquee behavior="alternate" direction="8" class="carusel" >
+    <img src="@/assets/main/carusel_1.svg" alt="">
         <img src="@/assets/main/carusel_2.svg" alt="">
         <img src="@/assets/main/carusel_3.svg" alt="">
         <img src="@/assets/main/carusel_1.svg" alt="">
@@ -21,8 +27,9 @@
         <img src="@/assets/main/carusel_15.svg" alt="">
         <img src="@/assets/main/carusel_16.svg" alt="">
         <img src="@/assets/main/carusel_17.svg" alt="">
-  </Vue3Marquee>
-    </div>
+</marquee>
+</div>
+
 </template>
 
 <script>
@@ -45,12 +52,10 @@ export default {
     gap: 30px;
 }
 .carusel img{
-   display: block;
-   width: 100%; 
-   /* flex: 1 1 10rem; */
     height: 150px;
     margin: 0 20px;
    margin-bottom: 0;
+   transform: translateY(7px) ;
 }
 
 @media (max-width: 768px){

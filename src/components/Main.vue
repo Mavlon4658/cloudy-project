@@ -185,7 +185,7 @@ export default {
 @media (max-width: 375px) {
   .main_container {
     padding: 0 60px;
-    margin: 50px auto 0;
+    margin:0 auto;
   }
   .og_img {
     max-width: 140px;

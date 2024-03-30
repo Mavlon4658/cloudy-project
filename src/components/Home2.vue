@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="text">
+    <div class="text animate__animated animate__bounce animate__backInRight">
       Hi. We live in Cloud Nowhere. We can't explain what's going on  here. We
       came in the form of NFTs, and we've become fun to buy. Pick up your unique
       CLOUDY NFT to wear in your cloudy mood and join the crazy community
@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import 'animate.css';
 export default {};
 </script>
 

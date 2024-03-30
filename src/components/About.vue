@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import 'animate.css';
 export default {};
 </script>
 
@@ -97,7 +98,7 @@ export default {};
     margin-top: 184px;
   }
   .cloud2 {
-    width: 140px;
+    width: 120px;
     top: 10%;
     right: 5%;
     left: auto;
@@ -105,7 +106,7 @@ export default {};
   }
 
   .fr {
-    width: 35px;
+    width: 30px;
     left: 12%;
     right: auto;
     bottom: 20%;
@@ -157,7 +158,31 @@ export default {};
     bottom: 0;
   }
 }
+@media (max-width: 426px) {
+  .roadmap {
+  /* border: 1px solid; */
+  flex: 3 1 24rem;
+}
+  .cloud2 {
+    width: 80px;
+    bottom: auto;
+    right: 5%;
+    left: auto;
+    top: 26%;
+  }
+
+  .fr {
+    width: 20px;
+    right: 12%;
+    left: auto;
+    bottom: 0%;
+  }
+}
 @media (max-width: 375px) {
+  .roadmap {
+  /* border: 1px solid; */
+  flex: 3 1 24rem;
+}
   .text img {
     max-width: 110px;
     margin-bottom: 20px;
@@ -167,18 +192,18 @@ export default {};
     max-width: 120px !important;
   }
   .cloud2 {
-    width: 120px;
-    top: auto;
+    width: 80px;
+    bottom: auto;
     right: 5%;
     left: auto;
-    bottom: 0;
+    top: 23%;
   }
 
   .fr {
-    width: 35px;
-    left: 12%;
-    right: auto;
-    bottom: 0;
+    width: 20px;
+    right: 12%;
+    left: auto;
+    bottom: 0%;
   }
 }
 </style>
