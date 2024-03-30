@@ -7,11 +7,6 @@
         <img class="footer_top_go" src="@/assets/footer/lfg.svg" alt="" />
       </div>
     </div>
-    <div class="footer_bottom">
-      <a href="#">Made on </a>
-      <img src="@/assets/tildacopy.png" />
-      <a href="#">Tilda</a>
-    </div>
   </div>
 </template>
 

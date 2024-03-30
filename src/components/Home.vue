@@ -6,7 +6,7 @@
     </div>
     <Link />,
 
-      <button><a href="#">mint</a></button>
+      <button><a target="_blank" href="https://discord.gg/cloudynowhere">mint</a></button>
 
     <img class="cloud1" src="@/assets/cloud1.svg" alt="" />
   </div>
