@@ -3,7 +3,8 @@
   <Home2 />,
   <About />,
   <Main />,
-  <Footer class="footer_wrapper" />,
+  <Marque />,
+  <Footer />,
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Home2 from './components/Home2.vue'
 import About from './components/About.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import Marque from './components/Marque.vue'
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     Home2,
     About,
     Main,
+    Marque,
     Footer,
   }
 }

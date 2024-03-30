@@ -33,25 +33,6 @@
     <img class="ducg" src="@/assets/main/duck.svg" alt="" />
     <img class="cloud3" src="@/assets/main/cloud3.svg" alt="" />
   </div>
-  <!-- <div class="carusel">
-        <img src="@/assets/main/carusel_1.svg" alt="">
-        <img src="@/assets/main/carusel_2.svg" alt="">
-        <img src="@/assets/main/carusel_3.svg" alt="">
-        <img src="@/assets/main/carusel_4.svg" alt="">
-        <img src="@/assets/main/carusel_5.svg" alt="">
-        <img src="@/assets/main/carusel_6.svg" alt="">
-        <img src="@/assets/main/carusel_7.svg" alt="">
-        <img src="@/assets/main/carusel_8.svg" alt="">
-        <img src="@/assets/main/carusel_9.svg" alt="">
-        <img src="@/assets/main/carusel_10.svg" alt="">
-        <img src="@/assets/main/carusel_11.svg" alt="">
-        <img src="@/assets/main/carusel_12.svg" alt="">
-        <img src="@/assets/main/carusel_13.svg" alt="">
-        <img src="@/assets/main/carusel_14.svg" alt="">
-        <img src="@/assets/main/carusel_15.svg" alt="">
-        <img src="@/assets/main/carusel_16.svg" alt="">
-        <img src="@/assets/main/carusel_17.svg" alt="">
-    </div> -->
 
 </template>
 
@@ -61,21 +42,7 @@ export default {
 </script>
 
 <style scoped>
-/* .carusel{
-    width: 100%;
-    border-bottom: 2px solid;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-.carusel img{
-   display: block;
-    width: 100px;
-    height: 120px;
-   margin-bottom: 0;
-   border: 1px solid;
-   gap: 30px;
-} */
+
 
 .main_container {
   position: relative;
